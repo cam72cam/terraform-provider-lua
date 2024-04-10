@@ -1,1 +1,1 @@
-# terraform-provider-testfunctions
+# terraform-provider-lua

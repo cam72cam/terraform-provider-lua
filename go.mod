@@ -8,6 +8,7 @@ require (
 )
 
 require (
+	github.com/Shopify/go-lua v0.0.0-20240312125312-5d657e363856 // indirect
 	github.com/apparentlymart/go-ctxenv v1.0.0 // indirect
 	github.com/apparentlymart/go-shquot v0.0.1 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect

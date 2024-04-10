@@ -1,5 +1,7 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/Shopify/go-lua v0.0.0-20240312125312-5d657e363856 h1:N32EXb3LZ0FJwbdoMokLXysTHgWHccuYUPxmVqPowkw=
+github.com/Shopify/go-lua v0.0.0-20240312125312-5d657e363856/go.mod h1:M4CxjVc/1Nwka5atBv7G/sb7Ac2BDe3+FxbiT9iVNIQ=
 github.com/apparentlymart/go-ctxenv v1.0.0 h1:bsRTyED+PEcifljxBd/WhXRk/BNhgCigGYGZ0pVP4lM=
 github.com/apparentlymart/go-ctxenv v1.0.0/go.mod h1:Fxo441RKBr/C5JmbNRwdMSAUXs7k8M9ndNHBShdNCE4=
 github.com/apparentlymart/go-shquot v0.0.1 h1:MGV8lwxF4zw75lN7e0MGs7o6AFYn7L6AZaExUpLh0Mo=
