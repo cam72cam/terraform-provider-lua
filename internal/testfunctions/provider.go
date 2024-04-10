@@ -7,8 +7,7 @@ import (
 )
 
 func NewProvider() *tffunc.Provider {
-	p := tffunc.Provider{}
-
+	p := tffunc.NewProvider()
 	p.AddFunction("error", functions.ErrorFunc)
-	return &p
+	return p
 }
