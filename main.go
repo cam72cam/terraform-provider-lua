@@ -22,10 +22,6 @@ func main() {
 			Name:        "code",
 			Description: "Lua Code",
 			Type:        cty.String,
-		}, {
-			Name:        "function",
-			Description: "Lua function name",
-			Type:        cty.String,
 		}},
 		VarParam: &function.Parameter{
 			Name:        "parameters",
@@ -35,8 +31,7 @@ func main() {
 		Type: function.StaticReturnType(cty.DynamicPseudoType),
 		Impl: func(args []cty.Value, retType cty.Type) (cty.Value, error) {
 			code := args[0].AsString()
-			function := args[1].AsString()
-			args = args[2:]
+			args = args[1:]
 
 			l := lua.NewState()
 			lua.OpenLibraries(l)
@@ -47,10 +42,10 @@ func main() {
 			}
 
 			// Setup main call
-			l.Global(function)
-			//if !l.IsFunction(1) {
-			//	panic(l.TypeOf(1))
-			//}
+			//l.Global(function)
+			if !l.IsFunction(-1) {
+				return cty.NilVal, fmt.Errorf(`missing or invalid "return <function>" at end of input`)
+			}
 
 			for _, arg := range args {
 				err := CtyToLua(arg, l)

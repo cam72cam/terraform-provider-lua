@@ -8,5 +8,5 @@ terraform {
 }
 
 output "test" {
-	value = provider::tester::lua(file("./main.lua"), "echo", [1,2,5])
+	value = provider::tester::lua(file("./main.lua"), tomap({"foo": {"bar": toset([1,2,3])}}))
 }

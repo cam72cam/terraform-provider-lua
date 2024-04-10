@@ -23,3 +23,5 @@ end
 function echo(value)
     return value
 end
+
+return echo
